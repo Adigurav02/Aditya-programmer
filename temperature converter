@@ -1,0 +1,40 @@
+
+#Converting the temperature
+t=print("enter num:1 for celsius to farenheit, num:2 for celsius to kelvin and num:3 for fahrenheit to celsius, num:4 for kelvin to celsius")
+
+temp=int(input("Enter the correct number from(1/2/3/4)of your choise to converting the temperature:"))
+if temp==1:
+    #degreee celsius temperature to fahrenheit
+    celsius_temp=int(input("Enter a Temperature in degreee celsius :"))
+    print(celsius_temp)
+    x=print("converting celcius_temperature to fahrenheit of no:",celsius_temp);
+    fahrenheit_temp=(celsius_temp*9/5)+32;
+    print("The Fahrenheit_temperature=",fahrenheit_temp)
+    
+elif temp==2:
+    # degree celsius temperature to kelvin
+    kelvin_temp=int(input("Enter a Temperature in degreee celsius :"))
+    print(kelvin_temp);
+    x=print("converting censius_temperature to kelvin of no:",kelvin_temp);
+    kelvin_temp=(kelvin_temp+ 273.15);
+    print("The Fahrenheit_temperature=",kelvin_temp)
+elif temp==3:
+    #convert the numbers fahrenheit to celsius
+    fahrenheit_temp=int(input("Enter a Temperature in fahrenheit :"))
+    print(fahrenheit_temp)
+    x=print("converting fahrenheit_temperature to celsius of no:",fahrenheit_temp);
+    celsius_temp=(fahrenheit_temp-32)*5/9
+    print("The celsius_temperature=",celsius_temp)
+elif temp==4:
+     #convert the numbers kelvin to celsius
+    kelvin_temp=int(input("Enter a Temperature in kelvin :"))
+    print(kelvin_temp)
+    x=print("converting kelvin_temperature to celsius of no:",kelvin_temp);
+    celsius_temp=(kelvin_temp-273.15)
+    print("The celsius_temperature=",celsius_temp)
+
+else:
+    print("Enter a correct number as mention above")
+    
+print("Good Bye...have a nice day")
+
